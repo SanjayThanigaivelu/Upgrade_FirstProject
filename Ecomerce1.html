@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.Ribbon{
+    display: flex;
+    background-color:rgba(25,25,25,255);
+    color: white;
+   align-items: center;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 30px;
+   height: 70px;
+}
+.nine{
+    background-color: rgba(248,110,32,255);
+padding-left: 1.5px;
+width: 90px;
+border-radius: 1.5px;
+}
+.power{
+    background-color:rgba(25,25,25,255);
+display: inline-block;
+}
+.down{
+font-size: 8px;
+color: rgba(188,188,189,255); 
+padding-left: 48px;
+width: 100px;
+
+}
+.inner{
+   font-size:30px;
+   
+}
+.mobile{
+    margin-right: 100px;
+}
+.mobileM{
+    margin-right: 100px;
+    cursor: pointer;
+}
+.tri{
+   color: black;
+   
+    
+}
+.Top{
+    margin-right: 100px; 
+    cursor: pointer;
+}
+.Compare{
+    margin-right: 100px; 
+    cursor: pointer;
+    
+}
+.UpcomingMobiles{
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.Login{
+    cursor: pointer;
+}
+
+
+.Search{
+    margin-right: 100px;
+    position: relative;
+}
+.search-bar{
+    right: 15px;
+    top: 50%;
+    width: 250px;
+    height: 40px;
+    padding: 5px; 
+    background-color: rgba(255,255,255,255);
+    color:rgba(207,207,207,255);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.search-icon {
+    position: absolute; /* Position the icon absolutely within the .Search container */
+    right: 0; /* Align to the right edge of the container */
+    top: 0; /* Align to the top edge of the container */
+    height: 100%; /* Full height of the search container */
+    width: 15%; /* 1/4 width of the search container */
+    background-color: rgba(199, 199, 199, 1); /* Gray background for the icon */
+    border-left: 1px solid white; /* Optional border on the left side of the icon */
+    box-sizing: border-box; /* Include padding and borders in width/height */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 5px;
+}
+
+.head1{
+    display: inline-block;
+    margin: 30px;
+}
+.first{
+    font-size: 30px;
+}
+.second{
+    color: orange;
+    font-size: 18px;
+    margin-left: 50px;
+}
+.boxe1{
+   position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 15px;
+   
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight{
+    position: relative;
+    display: grid;
+  
+    align-items: center;
+    border: 1px solid rgba(220,220,220,255); 
+    margin-right: 10px;
+    height: 400px;
+    padding-left: 50px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.content{
+    padding-left: 85px;
+}
+.middle{
+    padding-left: 45px;
+}
+
+
+.middleoppo{
+    padding-left: 70px;
+}
+
+
+.tag,.tag1{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(46,138,13,255);
+    color: white;  
+    width:60px;
+    font-size: 13px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.amountoppo{
+    padding-left: 55px;
+    margin-bottom: 80px;
+    color: orange;
+}
+.amount{
+    padding-left: 40px;
+    margin-bottom: 150px;
+    color: orange;
+}
+
+.expected{
+    display: inline-block;
+   margin-left:7px;
+   height: 15px;
+    color: #000;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+
+.details{
+    position:absolute; 
+    bottom: 0;
+    background-color: rgba(231,231,231,255);
+    border: 1px solid rgba(220,220,220,255);
+    width:100%;
+    height: 40px;
+padding-left: 125px;
+padding-top: 10px;
+box-sizing: border-box;
+cursor: pointer;
+
+}
+/*---------------------------------------------------------------- */
+
+
+ .first1{
+    font-size: 30px;
+    margin: 15px;
+   
+}
+.second1{
+    color: orange;
+    font-size: 18px;
+    margin-left: 60px;
+    
+}
+
+.txt{
+    margin-top: 55px;
+}
+.boxes2{
+    position: relative;
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+   
+    row-gap: 50px;
+    margin: 15px;
+    margin-top: 50px;
+ }
+ .five,.six,.seven,.eight{
+    position: relative;
+    display: grid;
+  
+    align-items: center;
+    border: 1px solid rgba(220,220,220,255); 
+    margin-right: 10px;
+    height: 400px;
+    padding-left: 50px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.middle5{
+    margin-left: 70px;
+}
+.middle6{
+   margin-left: 10px;
+}
+.middle8{
+   margin-left: 80px;
+}
+.slideArrow{
+   position: absolute;
+right: -10px;
+top:165px;
+    border: 1px solid white;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border: 2px solid #bfbfbf; 
+    background-color: rgba(191,191,191,255);
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+cursor: pointer;
+}
+
+
+
+
+
+</style>
+
+
+
+
+    <div class="total">
+    <div class="Ribbon">
+<div class="mobile">
+    <div class="inner">
+    <span class="nine">91</span>
+    m<div class="power"><img src=power-xxl.jpg ></div>biles
+    <div class="down">research. compare. buy.</div></div>
+    
+</div>
+
+<div class="mobileM">
+    Mobiles & More<span class="tri" >  &#9660;</span>
+</div>
+
+<div class="Top">
+    Top <span class="tri" >  &#9660;</span>
+    </div>
+
+    <div class="Compare">
+        Compare <span class="tri" >  &#9660;</span>
+    </div>
+
+    <div class="UpcomingMobiles">
+        Upcoming Mobiles
+    </div>
+
+    <div class="Search">
+        <label for="Search" class="seach-label"></label>
+        <input type="text" id="search" class="search-bar" 
+        placeholder="Search for products or brands " />
+     <img src="glass.png" class="search-icon" alt="Search Icon"/>
+    </div>
+
+    <div class="Login">Login</div>
+    </div>
+
+
+    <div class="head1">
+        <span class="first">Upcoming Mobiles  <span class="second">    Upcoming Mobiles</span>
+</span>
+    </div>
+
+
+
+
+    <div class="boxe1">
+        
+        <div class="one">
+        <div class="tag">
+            91% <br/>
+            SPEC <br/>
+            SCORE
+        </div>
+        <div class="content">
+        <img src="one.png" >
+        </div>
+        <div class="middle">
+        <h3>Xiaomi Redmi K40</h3>
+        </div>
+        <br/>
+<div class="amount">Rs. 22,490<span class="expected"> (Expected)</span></div>
+   <div class="details">View Details</div>
+</div>
+
+    <div class="two">
+        <div class="tag">
+            92% <br/>
+            SPEC <br/>
+            SCORE
+        </div>
+        <div class="content">
+        <img src="two.png" >
+        </div>
+        <div class="middle">
+        <h3>Xiaomi Mi 11 pro</h3>
+        </div>
+        <br/>
+<div class="amount">Rs. 55,390<span class="expected"> (Expected)</span></div>
+ <div class="details">View Details</div>  
+</div>
+
+    <div class="three">
+        <div class="content">
+        <img src="three.png" >
+        </div>
+        <div class="middleoppo">
+        <h3>OPPO F21 Pro</h3>
+        </div>
+        <br/>
+<div class="amountoppo">Rs. 25,990<span class="expected"> (Expected)</span></div>
+   <div class="details">View Details</div> 
+</div>
+
+    <div class="four">
+        <div class="tag">
+            94% <br/>
+            SPEC <br/>
+            SCORE
+        </div>
+        <div class="content">
+        <img src="four.png" >
+        </div>
+        <div class="middle">
+        <h3>Xiaomi Mi Mix 4</h3>
+        </div>
+        <br/>
+        <div class="slideArrow">
+            &gt;
+            </div>
+<div class="amount">Rs. 57,490<span class="expected"> (Expected)</span></div>
+<div class="details">View Details</div> 
+</div>
+</div>
+
+<div class="txt">
+<span class="first1">Latest and Popular Mobiles</span> <span class="second1">All Mobiles</span>
+</div>
+
+
+<div class="boxes2">  
+ 
+
+    <div class="five">
+    <div class="tag1">
+        98% <br/>
+        SPEC <br/>
+        SCORE
+    </div>
+    <div class="content">
+    <img src="five.png" ></div>
+    <div class="middle5">
+    <h3>Apple iPhone 13</h3> 
+   </div>
+</div>
+
+<div class="six">
+    <div class="tag1">
+        99% <br/>
+        SPEC <br/>
+        SCORE
+    </div>
+    <div class="content">
+    <img src="six.png" ></div>
+    <div class="middle6">
+    <h3>Apple iPhone 13 Pro Max</h3> 
+    </div>
+</div>
+
+<div class="seven">
+    <div class="tag1">
+        87% <br/>
+        SPEC <br/>
+        SCORE
+    </div>
+    <div class="content">
+    <img src="seven.png" >
+    </div>
+    <div class="middle">
+    <h3>Xiaomi 11 Lite NE 5G</h3> 
+    </div>
+</div>
+
+<div class="eight">
+    <div class="tag1">
+        91% <br/>
+        SPEC <br/>
+        SCORE
+    </div>
+    <div class="content">
+    <img src="eight.png" >
+    </div>
+    <div class="middle8">
+    <h3>Vivo X70 Pro</h3> 
+    </div>
+    <div class="slideArrow">
+        &gt;
+    </div>
+</div>
+    </div>
+</body>
+</html>
